@@ -115,6 +115,6 @@ We welcome contributions!
 
 ## 📬 Feedback
 
-For bugs, suggestions, or issues, please open a [GitHub Issue](https://github.com/yourname/assets-cleaner-vscode/issues).
+For bugs, suggestions, or issues, please open a [GitHub Issue](https://github.com/HackRoot1/Assets-Cleaner/issues).
 
 ---
