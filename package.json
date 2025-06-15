@@ -1,15 +1,18 @@
 {
   "name": "assets-cleaner",
   "displayName": "Assets Cleaner",
-  "description": "Extension to clean unused CSS/JS/Images",
+  "description": "VS Code extension to remove unused CSS, JS, and images from your web project.",
   "version": "0.0.1",
+  "publisher": "SaurabhKailasDamale",
   "engines": {
     "vscode": "^1.100.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:assets-cleaner.cleanProject"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -47,5 +50,11 @@
     "glob": "^11.0.2",
     "postcss": "^8.5.4",
     "postcss-safe-parser": "^7.0.1"
-  }
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HackRoot1/Assets-Cleaner.git"
+  },
+  "license": "MIT"
+
 }
