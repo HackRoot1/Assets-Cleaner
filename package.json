@@ -1,0 +1,51 @@
+{
+  "name": "assets-cleaner",
+  "displayName": "Assets Cleaner",
+  "description": "Extension to clean unused CSS/JS/Images",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+          "command": "assets-cleaner.cleanProject",
+          "title": "Assets Cleaner: Clean project"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/postcss-safe-parser": "^5.0.4",
+    "@types/vscode": "^1.100.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "acorn": "^8.15.0",
+    "cheerio": "^1.1.0",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.2",
+    "postcss": "^8.5.4",
+    "postcss-safe-parser": "^7.0.1"
+  }
+}
